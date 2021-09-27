@@ -1,0 +1,214 @@
+:root {
+    /* font size 10pt to rem conversion  */
+    font-size: 83.33%;
+    --black: #000000;
+    --white: #FFFFFF; 
+    --red: #EC1C24;
+    --deep-black: #1E1E1E;
+    --light-gray: #FAFAFA;
+    --gray: #989898;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    /* letter-spacing: .026rem; */
+}
+a {
+    color: var(--black);
+    text-decoration: none;
+}
+a:hover {
+    color: var(--black);
+}
+img {
+    width: 100%;
+}
+/* All Common CSS  */
+.title {
+    font-size: 2.5rem;
+}
+.subtitle {
+    font-size: 2rem;
+}
+.heading {
+    font-size: 5rem;
+}
+.sub-heading {
+    font-size: 3rem;
+}
+.body2 {
+    font-size: 1.2rem;
+}
+.text-bold {
+    font-weight: bold;
+}
+.text-white {
+    color: var(--white);
+}
+.text-black {
+    color: var(--black);
+}
+.text-gray {
+    color: var(--gray);
+}
+.bg_black {
+    background-color: var(--black);
+}
+.bg_deep-black {
+    background-color: var(--deep-black);
+}
+.bg_white {
+    background-color: var(--black);
+}
+.bg_light-gray {
+    background-color: var(--light-gray);
+}
+.icon {
+    color: var(--white);
+}
+.icon_circle{
+    border-radius: 50%;
+    background-color: var(--black);
+}
+.btn-white, .btn-white:hover{
+    color: var(--black);
+    background-color: var(--white);
+    /* padding: 1.2rem 1.8rem;     */
+    border-radius: .50rem;
+    font-size: 1rem;
+}
+.btn-black, .btn-black:hover{
+    color: var(--light-gray);
+    background-color: var(--black);
+    padding: 1.2rem 1.8rem;    
+    border-radius: .50rem;
+    font-size: 1.5rem;
+}
+/* header section  */
+.social-icon {
+    width: 1.6rem;
+    height: 1.6rem;
+    font-size: .8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social-icon:hover  {
+    background-color: var(--red);
+    transition: 0.4s;
+}
+
+/* hero section  */
+.carousel-caption {
+    transform: translateY(-50%);
+    bottom: 0;
+    top: 55%;
+}
+.carousel-indicators {
+    bottom: -4rem;
+}
+.circle-indicators {
+    border-radius: 50%;
+    width: 1.2rem !important;
+    height: 1.2rem !important;
+    background-color: #dad5d5 !important;
+}
+.carousel-indicators > .active {
+    background-color: var(--red) !important;
+}
+.down-arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    padding: 5rem 5rem;
+}
+
+/* brand section  */
+.brand__logo-wrapper {
+    background-color: var(--light-gray);
+    padding-top: 15.8rem;
+    padding-bottom: 15.8rem;
+}
+.brand__logo-wrapper img {
+    max-width: 142px;
+    max-height: 68px;
+}
+
+@media only screen and (max-width: 768px) {
+    .brand__logo-wrapper .border-sm-end-none {
+        border-right: 0px solid #dee2e6!important;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .brand__logo-wrapper {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+    .brand__logo-wrapper .border-xs-bottom {
+        border-bottom: 1px solid #dee2e6!important;
+    }
+    .brand__logo-wrapper .border-xs-end {
+        border-right: 1px solid #dee2e6!important;
+    }
+    .brand__logo-wrapper .border-xs-start {
+        border-left: 1px solid #dee2e6!important;
+    }
+    #brand .title {
+        font-size: 2rem;
+    }
+}
+
+/* contact section  */
+.heading-wrapper {
+    background: url(../images/bg-contact-us.png) no-repeat round;
+}
+.heading-wrapper .heading {
+    padding-top: 14rem;
+    padding-bottom: 14rem;
+}
+
+.contact-form {
+    text-align: left;
+    font-size: 1.2rem;
+    color: var(--gray);
+    text-transform: uppercase;
+}
+.form-control:focus {
+    color: var(--gray);
+    background-color: #fff;
+    border-color: var(--gray);
+    outline: 0;
+    box-shadow: 0 0 0 0 rgb(112 112 112 / 25%);
+}
+.contact-form .fa-chevron-down {
+    color: var(--red);
+}
+@media only screen and (max-width: 600px) {
+    
+    .heading-wrapper .heading {
+        font-size: 3rem;
+    }
+}
+
+/* footer section  */
+#footer {
+    background-color: var(--deep-black);
+    font-size: 1.2rem;
+    letter-spacing: 0.014rem;
+}
+.footer__header {
+    color: var(--white);
+}
+#footer .text-red {
+    color: var(--red);
+}
