@@ -84,7 +84,7 @@ img {
 .btn-white, .btn-white:hover{
     color: var(--black) !important;
     background-color: var(--white);
-    padding: 1.4rem 2.6rem; 
+    padding: 1.4rem 1rem; 
     border-radius: .25rem;
     font-size: 1.7rem !important;
     width: 100%;
@@ -92,7 +92,7 @@ img {
 .btn-black, .btn-black:hover{
     color: var(--light-gray);
     background-color: var(--black);
-    padding: 1.2rem 1.8rem; 
+    padding: 1.2rem 1rem; 
     border-radius: .25rem;
     font-size: 1.7rem;
     width: 100%;
@@ -161,7 +161,7 @@ img {
     max-height: 68px;
 } */
 .brand__col-padding {
-    padding: 6.5rem 7.5rem;
+    padding: 6.7rem 8.6rem;
 }
 
 @media only screen and (max-width: 768px) {
@@ -244,7 +244,8 @@ img {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding-right: 3rem;
+    padding-right: 3.5rem;
+    padding-left: 1.5rem;
 }
 #footer .social-icon:hover  {
     background-color: var(--deep-black);
@@ -265,6 +266,7 @@ img {
 
 @media only screen and (max-width: 600px) {
     #footer .social-icon {
-        padding-right: 4rem;
+        padding-right: 4.5rem;
+        padding-left: 2.5rem;
     }
 }
