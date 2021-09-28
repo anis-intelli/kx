@@ -25,6 +25,7 @@ body {
     font-size: 1.5rem;
     text-align: center;
     line-height: 1.6;
+    letter-spacing: 0.1rem;
 }
 a {
     color: var(--black);
@@ -83,8 +84,10 @@ img {
 .btn-white, .btn-white:hover{
     color: var(--black) !important;
     background-color: var(--white);
+    padding: 1.4rem 2.6rem; 
     border-radius: .25rem;
-    font-size: 1.3rem !important;
+    font-size: 1.7rem !important;
+    width: 100%;
 }
 .btn-black, .btn-black:hover{
     color: var(--light-gray);
@@ -92,12 +95,19 @@ img {
     padding: 1.2rem 1.8rem; 
     border-radius: .25rem;
     font-size: 1.7rem;
+    width: 100%;
+}
+.right-arrow{
+    width: .6rem;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 1.5rem;
 }
 /* header section  */
 .social-icon {
-    width: 1.6rem;
-    height: 1.6rem;
-    font-size: .8rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.4rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -146,9 +156,12 @@ img {
     padding-top: 15.8rem;
     padding-bottom: 15.8rem;
 }
-.brand__logo-wrapper img {
+/* .brand__logo-wrapper img {
     max-width: 142px;
     max-height: 68px;
+} */
+.brand__col-padding {
+    padding: 6.5rem 7.5rem;
 }
 
 @media only screen and (max-width: 768px) {
@@ -172,6 +185,9 @@ img {
     }
     #brand .title {
         font-size: 2rem;
+    }
+    .brand__col-padding {
+        padding: 3.5rem 4.5rem;
     }
 }
 
@@ -216,6 +232,12 @@ img {
 }
 .footer__header {
     color: var(--white);
+}
+#footer .form-control-lg {
+    padding: 1.8rem 1rem;
+}
+#footer .form-control {
+    background-color: var(--deep-black);
 }
 #footer .social-icon {
     font-size: 1.8rem;
