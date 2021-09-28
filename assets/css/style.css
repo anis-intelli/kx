@@ -1,6 +1,7 @@
 :root {
     /* font size 10pt to rem conversion  */
-    font-size: 83.33%;
+    /* font-size: 83.33%; */
+    font-size: 62.5%;
     --black: #000000;
     --white: #FFFFFF; 
     --red: #EC1C24;
@@ -13,6 +14,9 @@
     margin: 0;
     padding: 0;
 }
+html {
+    scroll-behavior: smooth;
+  }
 h1, h2, h3, h4, h5, h6, p, ul {
     margin: 0;
 }
@@ -20,7 +24,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.5rem;
     text-align: center;
-    /* letter-spacing: .026rem; */
+    line-height: 1.6;
 }
 a {
     color: var(--black);
@@ -51,11 +55,8 @@ img {
 .text-bold {
     font-weight: bold;
 }
-.text-white {
-    color: var(--white);
-}
-.text-black {
-    color: var(--black);
+.text-red {
+    color: var(--red);
 }
 .text-gray {
     color: var(--gray);
@@ -80,18 +81,17 @@ img {
     background-color: var(--black);
 }
 .btn-white, .btn-white:hover{
-    color: var(--black);
+    color: var(--black) !important;
     background-color: var(--white);
-    /* padding: 1.2rem 1.8rem;     */
-    border-radius: .50rem;
-    font-size: 1rem;
+    border-radius: .25rem;
+    font-size: 1.3rem !important;
 }
 .btn-black, .btn-black:hover{
     color: var(--light-gray);
     background-color: var(--black);
-    padding: 1.2rem 1.8rem;    
-    border-radius: .50rem;
-    font-size: 1.5rem;
+    padding: 1.2rem 1.8rem; 
+    border-radius: .25rem;
+    font-size: 1.7rem;
 }
 /* header section  */
 .social-icon {
@@ -111,7 +111,7 @@ img {
 .carousel-caption {
     transform: translateY(-50%);
     bottom: 0;
-    top: 55%;
+    top: 60%;
 }
 .carousel-indicators {
     bottom: -4rem;
@@ -132,6 +132,12 @@ img {
     font-size: 3rem;
     padding-top: 5rem;
     padding-bottom: 2rem;
+}
+
+@media only screen and (max-width: 600px) {
+    #hero .sub-heading {
+        font-size: 1.5rem;
+    }
 }
 
 /* brand section  */
@@ -170,12 +176,14 @@ img {
 }
 
 /* contact section  */
-.heading-wrapper {
-    background: url(../images/bg-contact-us.png) no-repeat round;
-}
-.heading-wrapper .heading {
-    padding-top: 14rem;
-    padding-bottom: 14rem;
+.heading-wrapper {    
+    background: url(../images/bg-contact-us@2x.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    min-height: 35rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .contact-form {
@@ -191,9 +199,6 @@ img {
     outline: 0;
     box-shadow: 0 0 0 0 rgb(112 112 112 / 25%);
 }
-.fa-caret-down {
-    color: var(--red);
-}
 .input-group-text {
     background-color: var(--white);
 }
@@ -208,11 +213,36 @@ img {
 #footer {
     background-color: var(--deep-black);
     font-size: 1.2rem;
-    letter-spacing: 0.014rem;
 }
 .footer__header {
     color: var(--white);
 }
-#footer .text-red {
-    color: var(--red);
+#footer .social-icon {
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-right: 3rem;
+}
+#footer .social-icon:hover  {
+    background-color: var(--deep-black);
+}
+#footer .border-bottom {
+    border-bottom: .5px solid #989898!important;
+}
+#footer a {
+    color: var(--gray);
+    font-size: 1.2rem;
+}
+.footer-menu ul li {
+    padding-bottom: 1.9rem; 
+}
+.copyright-bar {
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width: 600px) {
+    #footer .social-icon {
+        padding-right: 4rem;
+    }
 }
