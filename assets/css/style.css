@@ -156,10 +156,9 @@ img {
     padding-top: 15.8rem;
     padding-bottom: 15.8rem;
 }
-/* .brand__logo-wrapper img {
-    max-width: 142px;
-    max-height: 68px;
-} */
+.brand__logo-wrapper img {
+    width: auto;
+}
 .brand__col-padding {
     padding: 6.7rem 8.6rem;
 }
