@@ -174,8 +174,8 @@ img {
 /* brand section  */
 .brand__logo-wrapper {
     background-color: var(--light-gray);
-    padding-top: 15.8rem;
-    padding-bottom: 15.8rem;
+    padding-top: 12rem;
+    padding-bottom: 12rem;
 }
 .brand__logo-wrapper img {
     width: auto;
