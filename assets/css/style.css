@@ -37,6 +37,12 @@ a:hover {
 img {
     width: 100%;
 }
+@media only screen and (max-width: 600px) {
+    img {
+        width: auto;
+    }
+}
+
 /* All Common CSS  */
 .title {
     font-size: 2.5rem;
@@ -118,10 +124,13 @@ img {
 }
 
 /* hero section  */
+.carousel-heading{
+    font-size: 6rem;
+}
 .carousel-caption {
-    transform: translateY(-50%);
+    transform: translateY(-45%);
     bottom: 0;
-    top: 60%;
+    top: 50%;
 }
 .carousel-indicators {
     bottom: -4rem;
@@ -143,10 +152,22 @@ img {
     padding-top: 5rem;
     padding-bottom: 2rem;
 }
+#hero .carousel-item img {
+    min-height: 400px;
+}
 
 @media only screen and (max-width: 600px) {
     #hero .sub-heading {
         font-size: 1.5rem;
+    }
+    #hero .carousel-item img {
+        min-height: 250px;
+    }
+    .carousel-heading{
+        font-size: 2rem;
+    }    
+    .carousel-caption {
+        top: 48%;
     }
 }
 
@@ -162,10 +183,16 @@ img {
 .brand__col-padding {
     padding: 6.7rem 8.6rem;
 }
+.brand__logo-wrapper .border-top-sm-none {
+    border-top: 0px solid #dee2e6!important;
+}
 
-@media only screen and (max-width: 768px) {
-    .brand__logo-wrapper .border-sm-end-none {
-        border-right: 0px solid #dee2e6!important;
+@media only screen and (max-width: 992px) {
+    .brand__logo-wrapper .border-top {
+        border-top: 1px solid #dee2e6!important;
+    }    
+    .brand__logo-wrapper .border-xs-start {
+        border-left: 1px solid #dee2e6!important;
     }
 }
 @media only screen and (max-width: 600px) {
@@ -185,8 +212,12 @@ img {
     .brand__logo-wrapper .border-xs-start {
         border-left: 1px solid #dee2e6!important;
     }
+    .brand__logo-wrapper .border-top {
+        border-top: 1px solid #dee2e6!important;
+    } 
+
     #brand .title {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     .brand__col-padding {
         padding: 3.5rem 4.5rem;
@@ -221,7 +252,6 @@ img {
     background-color: var(--white);
 }
 @media only screen and (max-width: 600px) {
-    
     .heading-wrapper .heading {
         font-size: 3rem;
     }
