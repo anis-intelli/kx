@@ -12,7 +12,7 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
+    padding: 0;  
 }
 html {
     scroll-behavior: smooth;
@@ -24,8 +24,8 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.5rem;
     text-align: center;
+    letter-spacing: .1rem;
     line-height: 1.6;
-    letter-spacing: 0.1rem;
 }
 a {
     color: var(--black);
@@ -45,19 +45,29 @@ img {
 
 /* All Common CSS  */
 .title {
-    font-size: 2.5rem;
+    font-size: 2rem;
+    line-height: 1.6;
+    letter-spacing: 0.1rem;
 }
 .subtitle {
     font-size: 2rem;
+    line-height: 1.6;
+    letter-spacing: 0.1rem;
 }
 .heading {
     font-size: 5rem;
+    line-height: 1.6;
+    letter-spacing: 0.1rem;
 }
 .sub-heading {
     font-size: 3rem;
+    line-height: 1.6;
+    letter-spacing: 0.1rem;
 }
 .body2 {
     font-size: 1.2rem;
+    line-height: 1.6;
+    letter-spacing: 0.1rem;
 }
 .text-bold {
     font-weight: bold;
@@ -125,12 +135,12 @@ img {
 
 /* hero section  */
 .carousel-heading{
-    font-size: 6rem;
+    font-size: 3rem;
 }
 .carousel-caption {
-    transform: translateY(-45%);
+    transform: translateY(-50%);
     bottom: 0;
-    top: 50%;
+    top: 55%;
 }
 .carousel-indicators {
     bottom: -4rem;
@@ -150,7 +160,7 @@ img {
     align-items: center;
     font-size: 3rem;
     padding-top: 5rem;
-    padding-bottom: 2rem;
+    padding-bottom: 2.5rem;
 }
 #hero .carousel-item img {
     min-height: 400px;
@@ -164,10 +174,10 @@ img {
         min-height: 250px;
     }
     .carousel-heading{
-        font-size: 2rem;
+        font-size: 1.3rem;
     }    
     .carousel-caption {
-        top: 48%;
+        top: 58%;
     }
 }
 
@@ -187,12 +197,16 @@ img {
     border-top: 0px solid #dee2e6!important;
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1200px) {
     .brand__logo-wrapper .border-top {
         border-top: 1px solid #dee2e6!important;
     }    
     .brand__logo-wrapper .border-xs-start {
         border-left: 1px solid #dee2e6!important;
+    }
+
+    #brand .title {
+        font-size: 1.3rem;
     }
 }
 @media only screen and (max-width: 600px) {
@@ -201,7 +215,9 @@ img {
         padding-bottom: 5rem;
     }
     .brand__logo-wrapper img {
-        width: auto;
+        max-width: auto;
+        max-height: 35px;
+
     }
     .brand__logo-wrapper .border-xs-bottom {
         border-bottom: 1px solid #dee2e6!important;
@@ -217,7 +233,7 @@ img {
     } 
 
     #brand .title {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
     .brand__col-padding {
         padding: 3.5rem 4.5rem;
@@ -226,10 +242,8 @@ img {
 
 /* contact section  */
 .heading-wrapper {    
-    background: url(../images/bg-contact-us@2x.png);
-    background-repeat: no-repeat;
-    background-position: right;
-    min-height: 35rem;
+    background: url(../images/bg-contact-us@2x.png) no-repeat top;
+    min-height: 36rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -251,9 +265,22 @@ img {
 .input-group-text {
     background-color: var(--white);
 }
+@media only screen and (max-width: 992px) {
+    .heading-wrapper .heading {
+        font-size: 4rem;
+        padding: 0 7rem;
+    }
+}
 @media only screen and (max-width: 600px) {
+    .contact-form {
+        text-align: center;
+    }
+    .heading-wrapper {    
+        background: url(../images/contact-bg-mbl@2x.png) top no-repeat;
+    }
     .heading-wrapper .heading {
         font-size: 3rem;
+        padding: 0 7rem;
     }
 }
 
@@ -264,6 +291,9 @@ img {
 }
 .footer__header {
     color: var(--white);
+}
+.footer__header .title{
+    font-size: 2.5rem;
 }
 #footer .form-control-lg {
     padding: 1.8rem 1rem;
@@ -300,5 +330,8 @@ img {
     #footer .social-icon {
         padding-right: 4.5rem;
         padding-left: 2.5rem;
+    }
+    .footer__header .title {
+        padding: 0 5rem;
     }
 }
