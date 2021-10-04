@@ -41,6 +41,9 @@ img {
     img {
         width: auto;
     }
+    .logo-wrapper img {
+        min-height: 1.8rem;
+    }
 }
 
 /* All Common CSS  */
@@ -57,7 +60,7 @@ img {
 .heading {
     font-size: 5rem;
     line-height: 1.6;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.58rem;
 }
 .sub-heading {
     font-size: 3rem;
@@ -136,6 +139,7 @@ img {
 /* hero section  */
 .carousel-heading{
     font-size: 3rem;
+    letter-spacing: .3rem;
 }
 .carousel-caption {
     transform: translateY(-50%);
@@ -175,9 +179,10 @@ img {
     }
     .carousel-heading{
         font-size: 1.3rem;
+        letter-spacing: .13rem;
     }    
     .carousel-caption {
-        top: 58%;
+        top: 56%;
     }
 }
 
@@ -265,6 +270,9 @@ img {
 .input-group-text {
     background-color: var(--white);
 }
+.squre-input-grp-text {
+    padding: .375rem 1.2rem;
+}
 @media only screen and (max-width: 992px) {
     .heading-wrapper .heading {
         font-size: 4rem;
@@ -317,7 +325,7 @@ img {
 }
 #footer a {
     color: var(--gray);
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 .footer-menu ul li {
     padding-bottom: 1.9rem; 
