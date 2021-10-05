@@ -31,8 +31,6 @@ if(isset($_POST['email'])){
     $email = $_POST['email'];
   }
 
-
-  
   $reply_to = $email;
 
   try{
@@ -43,9 +41,6 @@ if(isset($_POST['email'])){
     $mail->Password = 'kx0penmail'; // Gmail address Password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $mail->Port = '587';
-
-    $mail->setFrom('poweredbykx@gmail.com'); // Gmail address which you used as SMTP server
-    $mail->addAddress('aanis434@gmail.com'); // Email address where you want to receive emails (you can use any of your gmail address including the gmail address which you used as SMTP server)
 
     //Recipients
     $mail->setFrom('poweredbykx@gmail.com'); // Gmail address which you used as SMTP server
