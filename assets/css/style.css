@@ -310,6 +310,7 @@ img {
 }
 #footer .form-control {
     background-color: var(--deep-black);
+    color: var(--gray);
 }
 #footer .social-icon {
     font-size: 1.8rem;
@@ -344,4 +345,15 @@ img {
     .footer__header .title {
         padding: 0 5rem;
     }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
 }

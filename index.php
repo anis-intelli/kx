@@ -1,3 +1,4 @@
+<?php include 'sendemail.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -18,6 +19,9 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
+    <!--alert messages start-->
+        <?= $alert; ?>
+    <!--alert messages end-->
     <header id="header" class="pt-4 pb-4 pt-sm-5 pb-sm-5 px-3">
       <div class="container">
         <div class="row align-items-center">
@@ -244,11 +248,11 @@
           </p>
           <div class="col-12 pt-3 pb-3">
             <h3 class="text-bold text-uppercase pb-2">EMAIL</h3>
-            <p>service@poweredbykx.com</p>
+            <p><a href="mailto:service@poweredbykx.com">service@poweredbykx.com</a></p>
           </div>
           <div class="col-12 pt-3 pb-3">
             <h3 class="text-bold text-uppercase pb-2">PHONE</h3>
-            <p>+88 09666 722788</p>
+            <p><a href="tel:+8809666722788">+88 09666 722788</a></p>
           </div>
         </div>
         <!-- contact details end  -->
@@ -257,7 +261,7 @@
           <p class="pb-5 mb-2 px-5 px-sm-0">
             Or, you may also fill out the following form to reach us
           </p>
-          <form class="contact-form">
+          <form class="contact-form" method="POST" action="">
             <div class="row justify-content-center">
               <div class="col-10 col-sm-4 pb-4">
                 <label for="formGroupExampleInput" class="form-label text-bold"
@@ -266,10 +270,12 @@
                 <div class="input-group mb-3">
                   <input
                     type="text"
+                    name="subject"
                     class="form-control form-control-lg"
                     placeholder="PLEASE SELECT A SUBJECT"
                     aria-label=""
                     aria-describedby="basic-addon2"
+                    required
                   />
                   <span class="input-group-text squre-input-grp-text" id="basic-addon2">
                     <i class="fa fa-caret-down text-red"></i>
@@ -282,9 +288,11 @@
                 >
                 <input
                   type="text"
+                  name="name"
                   class="form-control form-control-lg"
                   placeholder=""
-                  aria-label="Last name"
+                  aria-label="name"
+                  required
                 />
               </div>
             </div>
@@ -296,10 +304,12 @@
                 <div class="input-group mb-3">
                   <input
                     type="email"
+                    name="email"
                     class="form-control form-control-lg"
                     placeholder=""
                     aria-label=""
                     aria-describedby="basic-addon2"
+                    required
                   />
                 </div>
               </div>
@@ -308,7 +318,8 @@
                   >Phone Number</label
                 >
                 <input
-                  type="text"
+                  type="number"
+                  name="phone"
                   class="form-control form-control-lg"
                   placeholder=""
                   aria-label="Last name"
@@ -323,12 +334,14 @@
                   >
                   <textarea
                     class="form-control form-control-lg"
+                    name="message"
                     id="exampleFormControlTextarea1"
                     rows="8"
+                    required
                   ></textarea>
                 </div>
                 <div class="col-12 col-sm-5 col-md-3 col-lg-2">
-                  <button class="btn btn-black mt-3 mb-2 text-capitalize"
+                  <button type="submit" name="contact" class="btn btn-black mt-3 mb-2 text-capitalize"
                     >Send
                     <img class="right-arrow" src="assets/images/right-arrow.svg" alt="">
                   </button>
@@ -354,20 +367,23 @@
                 Sign up to get industry insights
               </p>
             </div>
-            <form>
+            <form method="POST" action="">
               <div class="row justify-content-center pt-4">
                 <div class="col-10 col-sm-7 col-lg-8">
                   <input
-                    type="text"
+                    type="email"
+                    name="email"
                     class="form-control form-control-lg"
                     placeholder="Enter your email"
                     aria-label=""
                     aria-describedby="basic-addon2"
+                    required
                   />
                 </div>
                 <div class="col-10 col-sm-5 col-lg-4 pt-3 pt-sm-0">
                   <button
-                    href="javascript:void"
+                    type="submit"
+                    name="newsletter"
                     class="btn btn-white text-center"
                     >Subscribe 
                     <img class="right-arrow" src="assets/images/right-arrow-red.svg" alt="">
@@ -473,5 +489,11 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+
+    <script type="text/javascript">
+      if(window.history.replaceState){
+        window.history.replaceState(null, null, window.location.href);
+      }
+    </script>
   </body>
 </html>
