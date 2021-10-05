@@ -48,7 +48,7 @@ if(isset($_POST['email'])){
     $mail->addAddress('anisur.rahman@intelli.global');
     $mail->addReplyTo($reply_to);
     // $mail->addCC('cc@example.com');
-    $mail->addBCC('anisur.rahman@intelli.global');
+    // $mail->addBCC('anisur.rahman@intelli.global');
 
     $mail->isHTML(true);
     $mail->Subject = isset($_POST['contact']) ? 'Message Received From POWEREDBYKX Contact Form' : 'Message Received From POWEREDBYKX Newsletter Form';
