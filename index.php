@@ -142,14 +142,15 @@
             <!-- desktop view  -->
             <h2 class="title pb-3 d-none d-sm-block">
               The ‘K’ of <strong>KX</strong> refers to <strong>Kinetic Motion</strong>  and ‘X’ is for <strong>Multiplication</strong>. 
-             <br> We stand for speed and agility that we aspire to power your businesses with
+             <br> We stand for speed and agility that we aspire to power your businesses
              <br>through integrated tech & logistics frameworks. 
             </h2>
             <!-- for mobile view  -->
+            <!-- with -->
             <h2 class="title pb-3 d-block d-sm-none">
               The ‘K’ of <strong>KX</strong> refers to <strong>Kinetic Motion</strong>  and ‘X’ is for <strong>Multiplication</strong>. 
               We stand for speed and agility that we aspire to power your businesses
-             with through integrated tech & logistics frameworks. 
+             through integrated tech & logistics frameworks. 
             </h2>
           </div>
         </div>
