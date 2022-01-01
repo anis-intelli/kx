@@ -190,7 +190,7 @@
               "
             >
               <a href="javascript:void"
-                ><img src="assets/images/brands/apparel.svg" alt="apparel"
+                ><img src="assets/images/brands/kx-electronics.svg" alt="electronics"
               /></a>
             </div>
             <div
@@ -206,7 +206,7 @@
               "
             >
               <a href="javascript:void"
-                ><img src="assets/images/brands/footwear.svg" alt="footwear"
+                ><img src="assets/images/brands/kx-drop.svg" alt="kx drop"
               /></a>
             </div>
           </div>
